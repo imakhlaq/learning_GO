@@ -41,6 +41,8 @@ func main() {
 	_, isPresent := m["Key2"] //leaving the value using _
 	fmt.Println("is present", isPresent)
 
+	//===========================================================================================================
+
 	// You can declare and initialize a map in one line
 	mk := map[int]string{1: "go", 2: "node"}
 

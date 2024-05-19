@@ -42,10 +42,27 @@ func main() {
 
 	fmt.Println(ans)
 
+	//===========================================================================================================
+	//storing function in a variable
+
+	var fibFun func(i int) int // declaring a variable that will contain a function
+
+	//initializing the variable
+
+	fibFun = func(i int) int {
+		return 1
+	}
+
+	//using
+	fibFun(1)
+	//===========================================================================================================
+
 	//taking second value and leaving first returned value
 	_, str := multiReturn()
 
 	fmt.Println(str)
+
+	//===========================================================================================================
 
 	// to call variadic function u can pass any amount of values
 	sumK(1, 2, 3, 3, 4, 4, 555)

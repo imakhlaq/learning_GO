@@ -16,10 +16,14 @@ func main() {
 
 	fmt.Println(len(a)) // length of an array
 
+	//===========================================================================================================
+
 	// array with values ( initialising array with one line )
 	agents := [4]string{"neon", "viper", "fade", "sage"}
 
 	fmt.Println(agents)
+
+	//===========================================================================================================
 
 	//another way initialising array with one line
 	//compiler will figure out how many values does array have
@@ -31,6 +35,8 @@ func main() {
 	data := [...]int{1, 2, 4: 4, 5, 6}
 
 	fmt.Println(data[2])
+
+	//===========================================================================================================
 
 	//multi dimension array
 	var twoD [2][2]int

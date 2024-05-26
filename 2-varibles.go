@@ -5,7 +5,14 @@ import "fmt"
 // variable in global scope
 var global = 200
 
-const CONST_DTA = "SOME CONST DATA"
+const port = "SOME CONST DATA"
+
+// if u have to declare multiple variables
+const (
+	data   = 10
+	father = "some"
+	kafka  = "utl"
+)
 
 func main() {
 
@@ -15,13 +22,21 @@ func main() {
 
 	//declaring multiple variables
 	var b, c int = 1, 2 // two variables in one line ( and in the second variable we are specifying the type
-	fmt.Println(b, c)
+
+	// if u have to declare multiple variables
+	var (
+		data   = 10
+		father = "some"
+		kafka  = "utl"
+	)
+
+	fmt.Println(b, c, data, father, kafka)
 
 	var d = true
 	fmt.Println(d)
 
 	// creating variable with no value
-	//var k int //default value for int is gonna be zero
+	//var k int //default value for int is gonna be 0
 	//fmt.Printf(k)
 
 	//shorthand to declare and initializing a variable
@@ -29,6 +44,6 @@ func main() {
 	fmt.Println(g)
 
 	//constant
-	const BASE_URL = "https"
+	const base_url = "https"
 
 }

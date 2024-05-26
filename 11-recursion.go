@@ -1,8 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
-func calcFib(num int) int {
+func calcFib(num int) int64 {
 
 	if num == 0 {
 		return 0
@@ -16,7 +18,7 @@ func calcFib(num int) int {
 
 func main() {
 
-	fibOfNum := calcFib(3)
+	fibOfNum := calcFib(30)
 
 	fmt.Println(fibOfNum)
 }

@@ -7,8 +7,7 @@ import (
 
 func main() {
 
-	//unlike arrays slices only needed to be type by element not by no of elements
-	//means its dynamic array
+	//unlike arrays slices only needed to be type by element not by no of elements(means its dynamic array)
 
 	//creating slice is same as an array, but you don't specify the size
 

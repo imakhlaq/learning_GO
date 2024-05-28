@@ -14,6 +14,8 @@ const (
 	kafka  = "utl"
 )
 
+//hahi:="delo" does not work in global scope
+
 func main() {
 
 	//declaring variable

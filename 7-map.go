@@ -11,6 +11,8 @@ func main() {
 	//==========|| key[type]value Type
 	m := make(map[string]int)
 
+	//var name map[string]int
+
 	//setting key and value
 	m["key1"] = 22
 	m["key2"] = 3
@@ -38,8 +40,8 @@ func main() {
 	//the optional second return value when u try to access the map key.
 	//tells you that if key is present or not
 
-	_, isPresent := m["Key2"] //leaving the value using _
-	fmt.Println("is present", isPresent)
+	_, ok := m["Key2"] //leaving the value using _. use ok to check its available
+	fmt.Println("is present", ok)
 
 	//===========================================================================================================
 

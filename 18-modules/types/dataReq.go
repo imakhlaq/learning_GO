@@ -18,4 +18,8 @@ func creteUser() {
 
 	fmt.Printf("%+v", p)
 
+
+
+	
+
 }

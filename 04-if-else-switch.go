@@ -27,7 +27,6 @@ func main() {
 	} else {
 		fmt.Println("RANDOM")
 	}
-
 	//switch
 
 	i := 3

@@ -42,6 +42,12 @@ func main() {
 
 		//==============================================================================
 
+
+		// var data struct {
+		// 	URL string `json:"url"`
+		// }
+		// err := json.NewDecoder(r.Body).Decode(&data)
+
 		// better approach because you're directly writing it to response writer
 		// no copy
 
@@ -58,7 +64,6 @@ func main() {
 		return
 
 	})); err != nil {
-
 		fmt.Println("error while creating server", err.Error())
 	}
 }

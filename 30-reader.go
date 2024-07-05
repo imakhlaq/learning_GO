@@ -59,7 +59,6 @@ func writeToFile(reader io.Reader, data []byte) {
 
 			if err == io.EOF {
 				fmt.Println("FILE ENDED")
-
 				break
 			}
 

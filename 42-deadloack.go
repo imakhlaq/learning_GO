@@ -7,33 +7,33 @@ var (
 	lock2 sync.Mutex
 )
 
-type resource struct{
-	name string 
+type resource struct {
+	name string
 	data string
 }
 
-func routine1(data resource)  {
-	
+func routine1(data resource) {
+
 	lock1.Lock()
-	data.name="dadada";
+	data.name = "dadada"
 	routine2(data)
-	data.name="kaaaa"
+	data.name = "kaaaa"
 	lock1.Unlock()
-	
+
 }
 
-func routine2(data resource)  {
+func routine2(data resource) {
 	lock2.Lock()
-	data.name="sulpher";
-	data.data="huuuuu"
+	data.name = "sulpher"
+	data.data = "huuuuu"
 	lock2.Unlock()
 }
 
 func main() {
-r:=resource{name: "akhlaq",data: "222"}
+	r := resource{name: "akhlaq", data: "222"}
 
-go routine1(r);
+	go routine1(r)
 
-//waiting for both
-select{}
+	//waiting for both
+	select {}
 }

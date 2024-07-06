@@ -20,7 +20,7 @@ func main() {
 		}()
 	}
 	//sleeping
-	time.Sleep(4*time.Second)
+	time.Sleep(4 * time.Second)
 
 	fmt.Println("Expected", 10)
 	fmt.Println("Got", counter)

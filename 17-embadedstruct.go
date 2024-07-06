@@ -16,7 +16,7 @@ type container struct {
 	name string
 	id   int
 
-	//embadding
+	//embedding
 	base
 }
 

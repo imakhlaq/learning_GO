@@ -33,8 +33,7 @@ func main() {
 	close(message) //closing the channel
 }
 
-// This will cause a deadlock. Because first go routine write to the channel and second goroutine read from it and does't write to it.
-// And we again try to read from the channel that cause the deadlock.
+// This will cause a deadlock. In buffered channel u cant write until u have a reciter waiting for the data from the stream
 func mainDeadlock() {
 
 	message := make(chan string)

@@ -26,7 +26,6 @@ func newList[T any]() *CustomList[T] {
 
 // generic for func
 func someStuff[T any, L any](param1 T, param2 L) T {
-
 	return param1
 }
 

@@ -7,7 +7,7 @@ import (
 
 func main() {
 
-	c1 := make(chan string, 1)
+	c1 := make(chan string, 1) //buffered channel its common pattern to prevent goroutine leaks in case the channel is never read.
 
 	//external call that gives result after 3 second by writing to the channel
 	go func() {

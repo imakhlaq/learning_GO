@@ -19,8 +19,10 @@ func newServer() *server {
 
 func (s *server) start() {
 	fmt.Println("STARTING THE SERVER")
+
+	//label to break loop because u cant break loop inside a select
 Loop:
-	for {
+	for { //to keep on running the select and keep on listing for massages
 		select {
 		case signal := <-s.quit:
 			{
@@ -32,6 +34,8 @@ Loop:
 			{
 				fmt.Println("Message is -> ", message)
 			}
+		//default is used for non blocking select if above channels have no data.
+		//then don't block the goroutine
 		default:
 			{
 

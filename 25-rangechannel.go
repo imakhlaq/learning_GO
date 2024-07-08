@@ -18,4 +18,7 @@ func main() {
 	for data := range c {
 		fmt.Println(data)
 	}
+
+	// message,ok:= <- c
+	//check if ok is nil. then channel have no data
 }

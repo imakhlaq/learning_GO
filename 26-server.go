@@ -51,6 +51,8 @@ func req(server chan<- string) {
 func main() {
 
 	s := newServer()
+
+	//if not use goroutine here it will block the main goroutine
 	go s.start()
 
 	time.Sleep(3 * time.Second)

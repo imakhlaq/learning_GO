@@ -17,7 +17,7 @@ func main() {
 	signal := make(chan bool)
 	go worker(signal)
 
-	//reading data channel channel.
+	//reading data channel.
 	//So it will block the main goroutine and wait for the data to be available in channel.
 	<-signal
 }
